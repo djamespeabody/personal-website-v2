@@ -1,11 +1,132 @@
 ---
-title: "Home"
+title: false
+page-layout: full
 ---
-::: {.callout-note}
-## Welcome
 
-This is my Quarto-based personal website.
+::: {.hero-banner}
+::: {.hero-grid}
+::: {.hero-text}
 
-Pardon my dust, this site is still being constructed.
+# James Peabody
+
+## Experimental psychologist • quantitative methods • reproducible research
+
+I build and communicate rigorous statistical analyses with a focus on psychometrics, multilevel modeling, structural equation modeling, and reproducible reporting in **R** and **Quarto**.
+
+::: {.hero-buttons}
+[View CV](cv.qmd){.btn .btn-primary .btn-lg}
+[Browse Research Reports](reports/index.qmd){.btn .btn-outline-primary .btn-lg}
 :::
 
+:::
+
+::: {.hero-image}
+![](images/headshot.jpg){fig-alt="Professional headshot" .profile-photo}
+:::
+:::
+:::
+
+## Overview
+
+This site serves as a professional home for my academic work, teaching materials, and selected Quarto-based research reports. It is designed to make technical work easier to browse, interpret, and share.
+
+::: {.grid .overview-grid}
+
+::: {.g-col-12 .g-col-md-4}
+### Research
+
+My interests include psychometrics, social identity processes, multilevel modeling, mediation, SEM, and the communication of quantitative results in clear and usable formats.
+:::
+
+::: {.g-col-12 .g-col-md-4}
+### Teaching
+
+I develop graduate-level materials in statistics, psychometrics, and research methods, with an emphasis on conceptual clarity and applied workflows in R.
+:::
+
+::: {.g-col-12 .g-col-md-4}
+### Reproducible Workflows
+
+I use Quarto, R, and related tools to build reproducible analysis documents, dashboards, and reporting systems that are both technically robust and easy to navigate.
+:::
+
+:::
+
+## Featured Areas
+
+::: {.grid .feature-grid}
+
+::: {.g-col-12 .g-col-md-6}
+::: {.feature-card}
+### Research Reports
+
+A growing collection of Quarto-based reports that combine narrative, code, model output, tables, and visualizations in a web-friendly format.
+
+- [All reports](reports/index.qmd)
+- [RPG Model Report](reports/rpg-model-report.qmd)
+- [PPG Model Report](reports/ppg-model-report.qmd)
+- [Entitativity Mediation Report](reports/entitativity-mediation.qmd)
+:::
+:::
+
+::: {.g-col-12 .g-col-md-6}
+::: {.feature-card}
+### Professional Materials
+
+Use the site to browse background information, academic interests, and professional documents.
+
+- [About](about.qmd)
+- [Curriculum Vitae](cv.qmd)
+- [Projects](projects/index.qmd)
+- [Contact](contact.qmd)
+:::
+:::
+
+:::
+
+## Selected Reports
+
+::: {.grid .report-grid}
+
+::: {.g-col-12 .g-col-md-4}
+::: {.report-card}
+### RPG Model
+
+A structured report template for model overview, assumptions, fitted results, and post hoc comparisons.
+
+[Open report →](reports/rpg-model-report.qmd)
+:::
+:::
+
+::: {.g-col-12 .g-col-md-4}
+::: {.report-card}
+### PPG Model
+
+A parallel reporting structure for a second analysis workflow, designed for consistency and readability.
+
+[Open report →](reports/ppg-model-report.qmd)
+:::
+:::
+
+::: {.g-col-12 .g-col-md-4}
+::: {.report-card}
+### Entitativity Mediation
+
+A mediation report template focused on model structure, diagnostics, indirect effects, and interpretation.
+
+[Open report →](reports/entitativity-mediation.qmd)
+:::
+:::
+
+:::
+
+## Approach
+
+::: {.callout-note}
+## Why this site exists
+I am especially interested in making technical quantitative work more interpretable without sacrificing rigor. This site brings together professional materials and analysis reports in a format that supports both transparency and accessibility.
+:::
+
+## Get in touch
+
+If you are interested in collaboration, teaching, research methods, or applied quantitative work, please visit the [contact page](contact.qmd).
