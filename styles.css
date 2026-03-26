@@ -15,3 +15,14 @@ main.content {
   border-radius: 10px;
 }
 
+:root {
+  --bs-primary: #2C6E91;
+}
+
+a {
+  color: var(--bs-primary);
+}
+
+a:hover {
+  color: #1f4e66;
+}

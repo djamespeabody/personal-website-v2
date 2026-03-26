@@ -6,9 +6,5 @@ title: "Home"
 
 This is my Quarto-based personal website.
 
-- [About](about.qmd)
-- [CV](cv.qmd)
-- [Research Reports](reports/index.qmd)
-- [Projects](projects/index.qmd)
-- [Contact](contact.qmd)
+Pardon my dust, this site is still being constructed.
 
