@@ -4,7 +4,7 @@ project:
 
 website:
   title: "James Peabody"
-  site-url: "https://your-site-name.netlify.app"
+  site-url: "https://willowy-crostata-0fe39d.netlify.app/"
   navbar:
     pinned: true
     left:
