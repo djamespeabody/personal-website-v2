@@ -38,10 +38,14 @@ ul.task-list li input[type="checkbox"] {
 <script src="site_libs/quarto-html/tippy.umd.min.js"></script>
 <script src="site_libs/quarto-html/anchor.min.js"></script>
 <link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="site_libs/quarto-html/quarto-syntax-highlighting-845c23b38eaddc0f92fda52bfe77a8c8.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<link href="site_libs/quarto-html/quarto-syntax-highlighting-845c23b38eaddc0f92fda52bfe77a8c8.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-text-highlighting-styles">
+<link href="site_libs/quarto-html/quarto-syntax-highlighting-dark-f418161beb48e0141c760e455f12af2c.css" rel="stylesheet" class="quarto-color-scheme quarto-color-alternate" id="quarto-text-highlighting-styles">
+<link href="site_libs/quarto-html/quarto-syntax-highlighting-845c23b38eaddc0f92fda52bfe77a8c8.css" rel="stylesheet" class="quarto-color-scheme-extra" id="quarto-text-highlighting-styles">
 <script src="site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="site_libs/bootstrap/bootstrap-2f9ea8578dfb37bc9d1f685f4d87700c.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<link href="site_libs/bootstrap/bootstrap-18e7a6d57e8940b1e33ac70ed03c97e2.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
+<link href="site_libs/bootstrap/bootstrap-dark-b3a03745f4259d13a6c5ed249fe4945a.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="light">
+<link href="site_libs/bootstrap/bootstrap-18e7a6d57e8940b1e33ac70ed03c97e2.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme-extra" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -75,7 +79,169 @@ ul.task-list li input[type="checkbox"] {
 <link rel="stylesheet" href="styles.css">
 </head>
 
-<body class="nav-fixed quarto-light">
+<body class="nav-fixed quarto-light"><script id="quarto-html-before-body" type="application/javascript">
+    const toggleBodyColorMode = (bsSheetEl) => {
+      const mode = bsSheetEl.getAttribute("data-mode");
+      const bodyEl = window.document.querySelector("body");
+      if (mode === "dark") {
+        bodyEl.classList.add("quarto-dark");
+        bodyEl.classList.remove("quarto-light");
+      } else {
+        bodyEl.classList.add("quarto-light");
+        bodyEl.classList.remove("quarto-dark");
+      }
+    }
+    const toggleBodyColorPrimary = () => {
+      const bsSheetEl = window.document.querySelector("link#quarto-bootstrap:not([rel=disabled-stylesheet])");
+      if (bsSheetEl) {
+        toggleBodyColorMode(bsSheetEl);
+      }
+    }
+    const setColorSchemeToggle = (alternate) => {
+      const toggles = window.document.querySelectorAll('.quarto-color-scheme-toggle');
+      for (let i=0; i < toggles.length; i++) {
+        const toggle = toggles[i];
+        if (toggle) {
+          if (alternate) {
+            toggle.classList.add("alternate");
+          } else {
+            toggle.classList.remove("alternate");
+          }
+        }
+      }
+    };
+    const toggleColorMode = (alternate) => {
+      // Switch the stylesheets
+      const primaryStylesheets = window.document.querySelectorAll('link.quarto-color-scheme:not(.quarto-color-alternate)');
+      const alternateStylesheets = window.document.querySelectorAll('link.quarto-color-scheme.quarto-color-alternate');
+      manageTransitions('#quarto-margin-sidebar .nav-link', false);
+      if (alternate) {
+        // note: dark is layered on light, we don't disable primary!
+        enableStylesheet(alternateStylesheets);
+        for (const sheetNode of alternateStylesheets) {
+          if (sheetNode.id === "quarto-bootstrap") {
+            toggleBodyColorMode(sheetNode);
+          }
+        }
+      } else {
+        disableStylesheet(alternateStylesheets);
+        enableStylesheet(primaryStylesheets)
+        toggleBodyColorPrimary();
+      }
+      manageTransitions('#quarto-margin-sidebar .nav-link', true);
+      // Switch the toggles
+      setColorSchemeToggle(alternate)
+      // Hack to workaround the fact that safari doesn't
+      // properly recolor the scrollbar when toggling (#1455)
+      if (navigator.userAgent.indexOf('Safari') > 0 && navigator.userAgent.indexOf('Chrome') == -1) {
+        manageTransitions("body", false);
+        window.scrollTo(0, 1);
+        setTimeout(() => {
+          window.scrollTo(0, 0);
+          manageTransitions("body", true);
+        }, 40);
+      }
+    }
+    const disableStylesheet = (stylesheets) => {
+      for (let i=0; i < stylesheets.length; i++) {
+        const stylesheet = stylesheets[i];
+        stylesheet.rel = 'disabled-stylesheet';
+      }
+    }
+    const enableStylesheet = (stylesheets) => {
+      for (let i=0; i < stylesheets.length; i++) {
+        const stylesheet = stylesheets[i];
+        if(stylesheet.rel !== 'stylesheet') { // for Chrome, which will still FOUC without this check
+          stylesheet.rel = 'stylesheet';
+        }
+      }
+    }
+    const manageTransitions = (selector, allowTransitions) => {
+      const els = window.document.querySelectorAll(selector);
+      for (let i=0; i < els.length; i++) {
+        const el = els[i];
+        if (allowTransitions) {
+          el.classList.remove('notransition');
+        } else {
+          el.classList.add('notransition');
+        }
+      }
+    }
+    const isFileUrl = () => {
+      return window.location.protocol === 'file:';
+    }
+    const hasAlternateSentinel = () => {
+      let styleSentinel = getColorSchemeSentinel();
+      if (styleSentinel !== null) {
+        return styleSentinel === "alternate";
+      } else {
+        return false;
+      }
+    }
+    const setStyleSentinel = (alternate) => {
+      const value = alternate ? "alternate" : "default";
+      if (!isFileUrl()) {
+        window.localStorage.setItem("quarto-color-scheme", value);
+      } else {
+        localAlternateSentinel = value;
+      }
+    }
+    const getColorSchemeSentinel = () => {
+      if (!isFileUrl()) {
+        const storageValue = window.localStorage.getItem("quarto-color-scheme");
+        return storageValue != null ? storageValue : localAlternateSentinel;
+      } else {
+        return localAlternateSentinel;
+      }
+    }
+    const toggleGiscusIfUsed = (isAlternate, darkModeDefault) => {
+      const baseTheme = document.querySelector('#giscus-base-theme')?.value ?? 'light';
+      const alternateTheme = document.querySelector('#giscus-alt-theme')?.value ?? 'dark';
+      let newTheme = '';
+      if(authorPrefersDark) {
+        newTheme = isAlternate ? baseTheme : alternateTheme;
+      } else {
+        newTheme = isAlternate ? alternateTheme : baseTheme;
+      }
+      const changeGiscusTheme = () => {
+        // From: https://github.com/giscus/giscus/issues/336
+        const sendMessage = (message) => {
+          const iframe = document.querySelector('iframe.giscus-frame');
+          if (!iframe) return;
+          iframe.contentWindow.postMessage({ giscus: message }, 'https://giscus.app');
+        }
+        sendMessage({
+          setConfig: {
+            theme: newTheme
+          }
+        });
+      }
+      const isGiscussLoaded = window.document.querySelector('iframe.giscus-frame') !== null;
+      if (isGiscussLoaded) {
+        changeGiscusTheme();
+      }
+    };
+    const authorPrefersDark = false;
+    const darkModeDefault = authorPrefersDark;
+      document.querySelector('link#quarto-text-highlighting-styles.quarto-color-scheme-extra').rel = 'disabled-stylesheet';
+      document.querySelector('link#quarto-bootstrap.quarto-color-scheme-extra').rel = 'disabled-stylesheet';
+    let localAlternateSentinel = darkModeDefault ? 'alternate' : 'default';
+    // Dark / light mode switch
+    window.quartoToggleColorScheme = () => {
+      // Read the current dark / light value
+      let toAlternate = !hasAlternateSentinel();
+      toggleColorMode(toAlternate);
+      setStyleSentinel(toAlternate);
+      toggleGiscusIfUsed(toAlternate, darkModeDefault);
+      window.dispatchEvent(new Event('resize'));
+    };
+    // Switch to dark mode if need be
+    if (hasAlternateSentinel()) {
+      toggleColorMode(true);
+    } else {
+      toggleColorMode(false);
+    }
+  </script>
 
 <div id="quarto-search-results"></div>
   <header id="quarto-header" class="headroom fixed-top">
@@ -95,10 +261,6 @@ ul.task-list li input[type="checkbox"] {
   <li class="nav-item">
     <a class="nav-link active" href="./index.html" aria-current="page"> 
 <span class="menu-text">Home</span></a>
-  </li>  
-  <li class="nav-item">
-    <a class="nav-link" href="./about.html"> 
-<span class="menu-text">About</span></a>
   </li>  
   <li class="nav-item">
     <a class="nav-link" href="./cv.html"> 
@@ -138,18 +300,14 @@ ul.task-list li input[type="checkbox"] {
 </ul>
             <ul class="navbar-nav navbar-nav-scroll ms-auto">
   <li class="nav-item compact">
-    <a class="nav-link" href="https://github.com/YOUR-USERNAME"> <i class="bi bi-github" role="img">
-</i> 
-<span class="menu-text"></span></a>
-  </li>  
-  <li class="nav-item compact">
-    <a class="nav-link" href="https://www.linkedin.com/in/YOUR-PROFILE"> <i class="bi bi-linkedin" role="img">
+    <a class="nav-link" href="https://github.com/djamespeabody"> <i class="bi bi-github" role="img">
 </i> 
 <span class="menu-text"></span></a>
   </li>  
 </ul>
           </div> <!-- /navcollapse -->
             <div class="quarto-navbar-tools">
+  <a href="" class="quarto-color-scheme-toggle quarto-navigation-tool  px-1" onclick="window.quartoToggleColorScheme(); return false;" title="Toggle dark mode"><i class="bi"></i></a>
 </div>
       </div> <!-- /container-fluid -->
     </nav>
@@ -163,12 +321,17 @@ ul.task-list li input[type="checkbox"] {
     <h2 id="toc-title">On this page</h2>
    
   <ul>
-  <li><a href="#welcome" id="toc-welcome" class="nav-link active" data-scroll-target="#welcome">Welcome</a></li>
+  <li><a href="#overview" id="toc-overview" class="nav-link active" data-scroll-target="#overview">Overview</a></li>
+  <li><a href="#featured-areas" id="toc-featured-areas" class="nav-link" data-scroll-target="#featured-areas">Featured Areas</a></li>
+  <li><a href="#selected-reports" id="toc-selected-reports" class="nav-link" data-scroll-target="#selected-reports">Selected Reports</a></li>
+  <li><a href="#approach" id="toc-approach" class="nav-link" data-scroll-target="#approach">Approach</a></li>
+  <li><a href="#get-in-touch" id="toc-get-in-touch" class="nav-link" data-scroll-target="#get-in-touch">Get in touch</a></li>
   </ul>
 </nav>
     </div>
 <!-- main -->
 <main class="content column-page-left" id="quarto-document-content">
+
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
@@ -189,16 +352,115 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
-<section id="welcome" class="level1">
-<h1>Welcome</h1>
-<p>This is my Quarto-based personal website.</p>
+<div class="hero-banner">
+<div class="hero-grid">
+<section id="james-peabody" class="level1 hero-name hero-text">
+<h1 class="hero-name">James Peabody</h1>
+<section id="experimental-psychologist-quantitative-methods-reproducible-research" class="level2">
+<h2 class="anchored" data-anchor-id="experimental-psychologist-quantitative-methods-reproducible-research">Experimental psychologist • quantitative methods • reproducible research</h2>
+<p>I build and communicate rigorous statistical analyses with a focus on psychometrics, multilevel modeling, structural equation modeling, and reproducible reporting in <strong>R</strong> and <strong>Quarto</strong>.</p>
+<div class="hero-buttons">
+<p><a href="./cv.html" class="btn btn-primary btn-lg">View CV</a> <a href="./reports/index.html" class="btn btn-outline-primary btn-lg">Browse Research Reports</a></p>
+</div>
+</section>
+</section>
+<div class="hero-image">
+<p><img src="images/headshot.jpg" class="profile-photo img-fluid" alt="Professional headshot"></p>
+</div>
+</div>
+</div>
+<section id="overview" class="level2">
+<h2 class="anchored" data-anchor-id="overview">Overview</h2>
+<p>This site serves as a professional home for my academic work, teaching materials, and selected Quarto-based research reports. It is designed to make technical work easier to browse, interpret, and share.</p>
+<div class="grid overview-grid">
+<section id="research" class="level3 g-col-12 g-col-md-4">
+<h3 class="anchored" data-anchor-id="research">Research</h3>
+<p>My interests include psychometrics, social identity processes, multilevel modeling, mediation, SEM, and the communication of quantitative results in clear and usable formats.</p>
+</section>
+<section id="teaching" class="level3 g-col-12 g-col-md-4">
+<h3 class="anchored" data-anchor-id="teaching">Teaching</h3>
+<p>I develop graduate-level materials in statistics, psychometrics, and research methods, with an emphasis on conceptual clarity and applied workflows in R.</p>
+</section>
+<section id="reproducible-workflows" class="level3 g-col-12 g-col-md-4">
+<h3 class="anchored" data-anchor-id="reproducible-workflows">Reproducible Workflows</h3>
+<p>I use Quarto, R, and related tools to build reproducible analysis documents, dashboards, and reporting systems that are both technically robust and easy to navigate.</p>
+</section>
+</div>
+</section>
+<section id="featured-areas" class="level2">
+<h2 class="anchored" data-anchor-id="featured-areas">Featured Areas</h2>
+<div class="grid feature-grid">
+<div class="g-col-12 g-col-md-6">
+<section id="research-reports" class="level3 feature-card">
+<h3 class="anchored" data-anchor-id="research-reports">Research Reports</h3>
+<p>A growing collection of Quarto-based reports that combine narrative, code, model output, tables, and visualizations in a web-friendly format.</p>
+<ul>
+<li><a href="./reports/index.html">All reports</a></li>
+<li><a href="./reports/rpg-model-report.html">RPG Model Report</a></li>
+<li><a href="./reports/ppg-model-report.html">PPG Model Report</a></li>
+<li><a href="./reports/entitativity-mediation.html">Entitativity Mediation Report</a></li>
+</ul>
+</section>
+</div>
+<div class="g-col-12 g-col-md-6">
+<section id="professional-materials" class="level3 feature-card">
+<h3 class="anchored" data-anchor-id="professional-materials">Professional Materials</h3>
+<p>Use the site to browse background information, academic interests, and professional documents.</p>
 <ul>
 <li><a href="./about.html">About</a></li>
-<li><a href="./cv.html">CV</a></li>
-<li><a href="./reports/index.html">Research Reports</a></li>
+<li><a href="./cv.html">Curriculum Vitae</a></li>
 <li><a href="./projects/index.html">Projects</a></li>
 <li><a href="./contact.html">Contact</a></li>
 </ul>
+</section>
+</div>
+</div>
+</section>
+<section id="selected-reports" class="level2">
+<h2 class="anchored" data-anchor-id="selected-reports">Selected Reports</h2>
+<div class="grid report-grid">
+<div class="g-col-12 g-col-md-4">
+<section id="rpg-model" class="level3 report-card">
+<h3 class="anchored" data-anchor-id="rpg-model">RPG Model</h3>
+<p>A structured report template for model overview, assumptions, fitted results, and post hoc comparisons.</p>
+<p><a href="./reports/rpg-model-report.html">Open report →</a></p>
+</section>
+</div>
+<div class="g-col-12 g-col-md-4">
+<section id="ppg-model" class="level3 report-card">
+<h3 class="anchored" data-anchor-id="ppg-model">PPG Model</h3>
+<p>A parallel reporting structure for a second analysis workflow, designed for consistency and readability.</p>
+<p><a href="./reports/ppg-model-report.html">Open report →</a></p>
+</section>
+</div>
+<div class="g-col-12 g-col-md-4">
+<section id="entitativity-mediation" class="level3 report-card">
+<h3 class="anchored" data-anchor-id="entitativity-mediation">Entitativity Mediation</h3>
+<p>A mediation report template focused on model structure, diagnostics, indirect effects, and interpretation.</p>
+<p><a href="./reports/entitativity-mediation.html">Open report →</a></p>
+</section>
+</div>
+</div>
+</section>
+<section id="approach" class="level2">
+<h2 class="anchored" data-anchor-id="approach">Approach</h2>
+<div class="callout callout-style-default callout-note callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Note</span>Why this site exists
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>I am especially interested in making technical quantitative work more interpretable without sacrificing rigor. This site brings together professional materials and analysis reports in a format that supports both transparency and accessibility.</p>
+</div>
+</div>
+</section>
+<section id="get-in-touch" class="level2">
+<h2 class="anchored" data-anchor-id="get-in-touch">Get in touch</h2>
+<p>If you are interested in collaboration, teaching, research methods, or applied quantitative work, please visit the <a href="./contact.html">contact page</a>.</p>
 
 
 </section>
@@ -206,6 +468,19 @@ ul.task-list li input[type="checkbox"] {
 </main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
   window.document.addEventListener("DOMContentLoaded", function (event) {
+    // Ensure there is a toggle, if there isn't float one in the top right
+    if (window.document.querySelector('.quarto-color-scheme-toggle') === null) {
+      const a = window.document.createElement('a');
+      a.classList.add('top-right');
+      a.classList.add('quarto-color-scheme-toggle');
+      a.href = "";
+      a.onclick = function() { try { window.quartoToggleColorScheme(); } catch {} return false; };
+      const i = window.document.createElement("i");
+      i.classList.add('bi');
+      a.appendChild(i);
+      window.document.body.appendChild(a);
+    }
+    setColorSchemeToggle(hasAlternateSentinel())
     const icon = "";
     const anchorJS = new window.AnchorJS();
     anchorJS.options = {
@@ -277,7 +552,7 @@ ul.task-list li input[type="checkbox"] {
     }
       var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
       var mailtoRegex = new RegExp(/^mailto:/);
-        var filterRegex = new RegExp("https:\/\/your-site-name\.netlify\.app");
+        var filterRegex = new RegExp("jamespeabody\.com");
       var isInternal = (href) => {
           return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
       }
@@ -605,19 +880,6 @@ ul.task-list li input[type="checkbox"] {
   });
   </script>
 </div> <!-- /content -->
-<footer class="footer">
-  <div class="nav-footer">
-    <div class="nav-footer-left">
-<p>© 2026 James Peabody</p>
-</div>   
-    <div class="nav-footer-center">
-      &nbsp;
-    </div>
-    <div class="nav-footer-right">
-<p>Built with <a href="https://quarto.org/">Quarto</a></p>
-</div>
-  </div>
-</footer>
 
 
 

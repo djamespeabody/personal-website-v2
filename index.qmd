@@ -1,5 +1,5 @@
 ---
-title: false
+title: "Home"
 page-layout: full
 ---
 
@@ -7,7 +7,7 @@ page-layout: full
 ::: {.hero-grid}
 ::: {.hero-text}
 
-# James Peabody
+# James Peabody {.hero-name}
 
 ## Experimental psychologist • quantitative methods • reproducible research
 

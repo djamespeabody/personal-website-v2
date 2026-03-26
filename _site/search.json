@@ -53,7 +53,7 @@
     "href": "index.html",
     "title": "Home",
     "section": "",
-    "text": "Welcome\nThis is my Quarto-based personal website.\n\nAbout\nCV\nResearch Reports\nProjects\nContact"
+    "text": "I build and communicate rigorous statistical analyses with a focus on psychometrics, multilevel modeling, structural equation modeling, and reproducible reporting in R and Quarto.\n\nView CV Browse Research Reports"
   },
   {
     "objectID": "cv.html",
@@ -82,5 +82,47 @@
     "title": "CV",
     "section": "",
     "text": "Add your publications here."
+  },
+  {
+    "objectID": "index.html#experimental-psychologist-quantitative-methods-reproducible-research",
+    "href": "index.html#experimental-psychologist-quantitative-methods-reproducible-research",
+    "title": "Home",
+    "section": "",
+    "text": "I build and communicate rigorous statistical analyses with a focus on psychometrics, multilevel modeling, structural equation modeling, and reproducible reporting in R and Quarto.\n\nView CV Browse Research Reports"
+  },
+  {
+    "objectID": "index.html#overview",
+    "href": "index.html#overview",
+    "title": "Home",
+    "section": "Overview",
+    "text": "Overview\nThis site serves as a professional home for my academic work, teaching materials, and selected Quarto-based research reports. It is designed to make technical work easier to browse, interpret, and share.\n\n\nResearch\nMy interests include psychometrics, social identity processes, multilevel modeling, mediation, SEM, and the communication of quantitative results in clear and usable formats.\n\n\nTeaching\nI develop graduate-level materials in statistics, psychometrics, and research methods, with an emphasis on conceptual clarity and applied workflows in R.\n\n\nReproducible Workflows\nI use Quarto, R, and related tools to build reproducible analysis documents, dashboards, and reporting systems that are both technically robust and easy to navigate."
+  },
+  {
+    "objectID": "index.html#featured-areas",
+    "href": "index.html#featured-areas",
+    "title": "Home",
+    "section": "Featured Areas",
+    "text": "Featured Areas\n\n\n\nResearch Reports\nA growing collection of Quarto-based reports that combine narrative, code, model output, tables, and visualizations in a web-friendly format.\n\nAll reports\nRPG Model Report\nPPG Model Report\nEntitativity Mediation Report\n\n\n\n\n\nProfessional Materials\nUse the site to browse background information, academic interests, and professional documents.\n\nAbout\nCurriculum Vitae\nProjects\nContact"
+  },
+  {
+    "objectID": "index.html#selected-reports",
+    "href": "index.html#selected-reports",
+    "title": "Home",
+    "section": "Selected Reports",
+    "text": "Selected Reports\n\n\n\nRPG Model\nA structured report template for model overview, assumptions, fitted results, and post hoc comparisons.\nOpen report →\n\n\n\n\nPPG Model\nA parallel reporting structure for a second analysis workflow, designed for consistency and readability.\nOpen report →\n\n\n\n\nEntitativity Mediation\nA mediation report template focused on model structure, diagnostics, indirect effects, and interpretation.\nOpen report →"
+  },
+  {
+    "objectID": "index.html#approach",
+    "href": "index.html#approach",
+    "title": "Home",
+    "section": "Approach",
+    "text": "Approach\n\n\n\n\n\n\nNoteWhy this site exists\n\n\n\nI am especially interested in making technical quantitative work more interpretable without sacrificing rigor. This site brings together professional materials and analysis reports in a format that supports both transparency and accessibility."
+  },
+  {
+    "objectID": "index.html#get-in-touch",
+    "href": "index.html#get-in-touch",
+    "title": "Home",
+    "section": "Get in touch",
+    "text": "Get in touch\nIf you are interested in collaboration, teaching, research methods, or applied quantitative work, please visit the contact page."
   }
 ]

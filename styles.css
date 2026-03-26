@@ -67,6 +67,10 @@ p, li {
   justify-content: center;
 }
 
+.quarto-title-block {
+  display: none;
+}
+
 .profile-photo {
   max-width: 300px;
   width: 100%;

@@ -10,8 +10,6 @@ website:
     left:
       - href: index.qmd
         text: Home
-      - href: about.qmd
-        text: About
       - href: cv.qmd
         text: CV
       - text: Research Reports
@@ -34,10 +32,6 @@ website:
 
   page-footer:
     border: true
-    left: |
-      © 2026 James Peabody
-    right: |
-      Built with [Quarto](https://quarto.org/)
 
 format:
   html:

@@ -1,1 +1,1 @@
-Sitemap: https://your-site-name.netlify.app/sitemap.xml
+Sitemap: jamespeabody.com/sitemap.xml
