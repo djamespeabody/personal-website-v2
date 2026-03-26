@@ -1,10 +1,11 @@
 ---
 title: "Home"
 ---
-
-# Welcome
+::: {.callout-note}
+## Welcome
 
 This is my Quarto-based personal website.
 
 Pardon my dust, this site is still being constructed.
+:::
 

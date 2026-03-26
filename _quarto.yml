@@ -30,9 +30,7 @@ website:
         text: Contact
     right:
       - icon: github
-        href: https://github.com/YOUR-USERNAME
-      - icon: linkedin
-        href: https://www.linkedin.com/in/YOUR-PROFILE
+        href: https://github.com/djamespeabody
 
   page-footer:
     border: true
