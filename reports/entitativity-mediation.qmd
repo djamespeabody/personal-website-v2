@@ -1,0 +1,16 @@
+---
+title: "Entitativity Mediation Report"
+date: 2026-03-25
+description: "Template report for an entitativity mediation analysis."
+categories: [reports, mediation, entitativity]
+---
+
+::: {.callout-note}
+## Overview
+This report summarizes the mediation model.
+:::
+
+# Model Overview
+
+Add your overview here.
+

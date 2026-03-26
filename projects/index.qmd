@@ -1,0 +1,8 @@
+---
+title: "Projects"
+---
+
+# Projects
+
+This section can describe teaching materials, software tools, or ongoing work.
+

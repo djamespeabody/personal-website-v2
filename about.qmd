@@ -1,0 +1,17 @@
+---
+title: "About"
+about:
+  template: trestles
+  image: images/headshot.jpg
+  image-shape: rounded
+  links:
+    - icon: github
+      text: GitHub
+      href: https://github.com/YOUR-USERNAME
+    - icon: linkedin
+      text: LinkedIn
+      href: https://www.linkedin.com/in/YOUR-PROFILE
+---
+
+I am an experimental psychologist with interests in quantitative methods, psychometrics, and reproducible reporting.
+

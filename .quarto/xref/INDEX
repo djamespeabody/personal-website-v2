@@ -1,0 +1,29 @@
+{
+  "reports/index.qmd": {
+    "index.html": "bb75ccb3"
+  },
+  "reports/rpg-model-report.qmd": {
+    "rpg-model-report.html": "5bf5aafe"
+  },
+  "reports/ppg-model-report.qmd": {
+    "ppg-model-report.html": "53d8639f"
+  },
+  "reports/entitativity-mediation.qmd": {
+    "entitativity-mediation.html": "73cbd8fd"
+  },
+  "projects/index.qmd": {
+    "index.html": "5cb7c9ab"
+  },
+  "index.qmd": {
+    "index.html": "7a6cc868"
+  },
+  "about.qmd": {
+    "about.html": "f883d443"
+  },
+  "cv.qmd": {
+    "cv.html": "07f609dc"
+  },
+  "contact.qmd": {
+    "contact.html": "61664537"
+  }
+}

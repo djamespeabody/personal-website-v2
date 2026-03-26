@@ -1,0 +1,14 @@
+---
+title: "Home"
+---
+
+# Welcome
+
+This is my Quarto-based personal website.
+
+- [About](about.qmd)
+- [CV](cv.qmd)
+- [Research Reports](reports/index.qmd)
+- [Projects](projects/index.qmd)
+- [Contact](contact.qmd)
+

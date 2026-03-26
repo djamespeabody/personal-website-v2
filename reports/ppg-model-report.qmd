@@ -1,0 +1,16 @@
+---
+title: "PPG Model Report"
+date: 2026-03-25
+description: "Template report for a PPG model analysis."
+categories: [reports, models, PPG]
+---
+
+::: {.callout-note}
+## Overview
+This report summarizes the PPG model.
+:::
+
+# Model Overview
+
+Add your overview here.
+

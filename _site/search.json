@@ -1,0 +1,86 @@
+[
+  {
+    "objectID": "contact.html",
+    "href": "contact.html",
+    "title": "Contact",
+    "section": "",
+    "text": "Contact\nEmail: your-email@example.com\n\nGitHub\nLinkedIn"
+  },
+  {
+    "objectID": "about.html",
+    "href": "about.html",
+    "title": "About",
+    "section": "",
+    "text": "I am an experimental psychologist with interests in quantitative methods, psychometrics, and reproducible reporting."
+  },
+  {
+    "objectID": "projects/index.html",
+    "href": "projects/index.html",
+    "title": "Projects",
+    "section": "",
+    "text": "Projects\nThis section can describe teaching materials, software tools, or ongoing work."
+  },
+  {
+    "objectID": "reports/ppg-model-report.html",
+    "href": "reports/ppg-model-report.html",
+    "title": "PPG Model Report",
+    "section": "",
+    "text": "NoteOverview\n\n\n\nThis report summarizes the PPG model.\n\n\n\nModel Overview\nAdd your overview here."
+  },
+  {
+    "objectID": "reports/index.html",
+    "href": "reports/index.html",
+    "title": "Research Reports",
+    "section": "",
+    "text": "Research Reports\nThis section contains Quarto-based reports."
+  },
+  {
+    "objectID": "reports/rpg-model-report.html",
+    "href": "reports/rpg-model-report.html",
+    "title": "RPG Model Report",
+    "section": "",
+    "text": "NoteOverview\n\n\n\nThis report summarizes the RPG model.\n\n\n\nModel Overview\nAdd your overview here."
+  },
+  {
+    "objectID": "reports/entitativity-mediation.html",
+    "href": "reports/entitativity-mediation.html",
+    "title": "Entitativity Mediation Report",
+    "section": "",
+    "text": "NoteOverview\n\n\n\nThis report summarizes the mediation model.\n\n\n\nModel Overview\nAdd your overview here."
+  },
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "Home",
+    "section": "",
+    "text": "Welcome\nThis is my Quarto-based personal website.\n\nAbout\nCV\nResearch Reports\nProjects\nContact"
+  },
+  {
+    "objectID": "cv.html",
+    "href": "cv.html",
+    "title": "CV",
+    "section": "",
+    "text": "Add your education here.\n\n\n\nAdd your teaching experience here.\n\n\n\nAdd your publications here."
+  },
+  {
+    "objectID": "cv.html#education",
+    "href": "cv.html#education",
+    "title": "CV",
+    "section": "",
+    "text": "Add your education here."
+  },
+  {
+    "objectID": "cv.html#teaching",
+    "href": "cv.html#teaching",
+    "title": "CV",
+    "section": "",
+    "text": "Add your teaching experience here."
+  },
+  {
+    "objectID": "cv.html#publications",
+    "href": "cv.html#publications",
+    "title": "CV",
+    "section": "",
+    "text": "Add your publications here."
+  }
+]

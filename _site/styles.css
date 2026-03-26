@@ -1,0 +1,17 @@
+body {
+  line-height: 1.65;
+}
+
+.navbar-brand {
+  font-weight: 700;
+}
+
+main.content {
+  max-width: 1050px;
+  margin: 0 auto;
+}
+
+.callout {
+  border-radius: 10px;
+}
+

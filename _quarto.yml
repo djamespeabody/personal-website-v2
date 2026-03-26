@@ -1,0 +1,58 @@
+project:
+  type: website
+  output-dir: _site
+
+website:
+  title: "James Peabody"
+  site-url: "https://your-site-name.netlify.app"
+  navbar:
+    pinned: true
+    left:
+      - href: index.qmd
+        text: Home
+      - href: about.qmd
+        text: About
+      - href: cv.qmd
+        text: CV
+      - text: Research Reports
+        menu:
+          - href: reports/index.qmd
+            text: All Reports
+          - href: reports/rpg-model-report.qmd
+            text: RPG Model
+          - href: reports/ppg-model-report.qmd
+            text: PPG Model
+          - href: reports/entitativity-mediation.qmd
+            text: Entitativity Mediation
+      - href: projects/index.qmd
+        text: Projects
+      - href: contact.qmd
+        text: Contact
+    right:
+      - icon: github
+        href: https://github.com/YOUR-USERNAME
+      - icon: linkedin
+        href: https://www.linkedin.com/in/YOUR-PROFILE
+
+  page-footer:
+    border: true
+    left: |
+      © 2026 James Peabody
+    right: |
+      Built with [Quarto](https://quarto.org/)
+
+format:
+  html:
+    theme:
+      light: cosmo
+    css: styles.css
+    toc: true
+    toc-depth: 3
+    page-layout: full
+    smooth-scroll: true
+
+execute:
+  echo: false
+  warning: false
+  message: false
+
