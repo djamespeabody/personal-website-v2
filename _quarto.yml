@@ -4,7 +4,7 @@ project:
 
 website:
   title: "James Peabody"
-  site-url: "https://willowy-crostata-0fe39d.netlify.app/"
+  site-url: "jamespeabody.com"
   navbar:
     pinned: true
     left:
@@ -44,7 +44,8 @@ website:
 format:
   html:
     theme:
-      light: cosmo
+      light: flatly
+      dark: flatly
     css: styles.css
     toc: true
     toc-depth: 3
